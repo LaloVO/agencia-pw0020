@@ -67,8 +67,8 @@ const Navbar = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <img
-            src="/logo-joyce.png"
-            alt="3.33 Inmobiliaria"
+            src="/agent-avatar.svg"
+            alt="Agencia"
             className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             onError={(e) => {
               // Fallback if logo fails to load
@@ -77,10 +77,10 @@ const Navbar = () => {
           />
           <div className="flex flex-col">
             <span className="font-sans font-bold text-sm tracking-widest text-[#0B3C5D] leading-none uppercase">
-              {site?.site_name || '3.33 Inmobiliaria'}
+              {site?.site_name || 'Agencia'}
             </span>
             <span className="font-sans text-[10px] tracking-wider text-[#C9A84C] font-semibold">
-              Joyce Robles Góngora
+              Asesor Demo
             </span>
           </div>
         </Link>

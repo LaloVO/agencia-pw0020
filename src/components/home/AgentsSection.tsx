@@ -23,9 +23,9 @@ const AgentsSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const rawPhone = user?.telefono_usuario || '8125055699';
+  const rawPhone = user?.telefono_usuario || '5210000000000';
   const cleanPhone = rawPhone.replace(/[^0-9]/g, '');
-  const whatsappUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent('Hola Joyce, me interesa recibir asesoría inmobiliaria gratuita.')}`;
+  const whatsappUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent('Hola Asesor Demo, me interesa recibir asesoría inmobiliaria gratuita.')}`;
 
   return (
     <section
@@ -47,8 +47,8 @@ const AgentsSection = () => {
               <div className="absolute inset-4 rounded-[2.5rem] border border-[#C9A84C]/30 animate-pulse" />
               
               <img
-                src="/joyce-profile.png"
-                alt="Joyce Robles Góngora"
+                src="/agent-avatar.svg"
+                alt="Asesor Demo"
                 className="w-full h-full object-contain relative z-10 transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
                   // Fallback photo if profile fails to load
@@ -81,7 +81,7 @@ const AgentsSection = () => {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
-              Joyce Robles Góngora
+              Asesor Demo
             </h2>
 
             <p
@@ -89,7 +89,7 @@ const AgentsSection = () => {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
-              Con más de una década de experiencia liderando **3.33 Inmobiliaria** en Monterrey, me he especializado en revalorizar el patrimonio familiar. Mi compromiso absoluto es guiarte con transparencia y profesionalismo para transformar un problema de deudas o abandono en liquidez inmediata y paz mental.
+              Con más de una década de experiencia liderando **Agencia** en Monterrey, me he especializado en revalorizar el patrimonio familiar. Mi compromiso absoluto es guiarte con transparencia y profesionalismo para transformar un problema de deudas o abandono en liquidez inmediata y paz mental.
             </p>
 
             {/* Quick stats strip */}

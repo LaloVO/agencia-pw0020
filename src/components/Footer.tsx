@@ -5,9 +5,9 @@ import { Phone, Mail, Facebook, MessageCircle, MapPin } from 'lucide-react';
 const Footer = () => {
   const { user, site } = useSiteUser();
   
-  const rawPhone = user?.telefono_usuario || '8125055699';
+  const rawPhone = user?.telefono_usuario || '5210000000000';
   const cleanPhone = rawPhone.replace(/[^0-9]/g, '');
-  const whatsappUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent('Hola Joyce, me interesa recibir asesoría gratuita sobre mi propiedad.')}`;
+  const whatsappUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent('Hola Asesor Demo, me interesa recibir asesoría gratuita sobre mi propiedad.')}`;
 
   return (
     <footer className="bg-[#07253D] text-white pt-24 pb-12 px-6 md:px-12 border-t border-white/10">
@@ -16,16 +16,16 @@ const Footer = () => {
           <div className="flex flex-col gap-6">
             <Link to="/" className="flex items-center gap-3">
               <img
-                src="/logo-joyce.png"
-                alt="3.33 Inmobiliaria"
+                src="/agent-avatar.svg"
+                alt="Agencia"
                 className="h-12 w-auto object-contain bg-white/10 p-1.5 rounded-xl"
               />
               <div className="flex flex-col">
                 <span className="font-sans font-bold text-lg tracking-widest text-white leading-none uppercase">
-                  {site?.site_name || '3.33 Inmobiliaria'}
+                  {site?.site_name || 'Agencia'}
                 </span>
                 <span className="font-sans text-xs tracking-wider text-[#C9A84C] font-semibold mt-1">
-                  Joyce Robles Góngora
+                  Asesor Demo
                 </span>
               </div>
             </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
                 className="flex items-center gap-3 hover:text-[#C9A84C] transition-colors"
               >
                 <Mail className="w-4 h-4 text-[#C9A84C]" />
-                <span>{user?.email_usuario || 'joyce.robles.cbf@gmail.com'}</span>
+                <span>{user?.email_usuario || 'contacto@agencia.com'}</span>
               </a>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-[#C9A84C]" />
@@ -66,7 +66,7 @@ const Footer = () => {
             </h4>
             <div className="flex gap-4">
               <a
-                href="https://www.facebook.com/3.33inmobiliaria"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-white/10 hover:bg-[#C9A84C] hover:text-[#07253D] transition-all duration-300"
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-white/10 text-[10px] text-white/50 uppercase tracking-widest flex flex-col sm:flex-row justify-between gap-4 font-sans">
-          <span>© {new Date().getFullYear()} 3.33 Inmobiliaria - Joyce Robles Góngora. Todos los derechos reservados.</span>
+          <span>© {new Date().getFullYear()} Agencia - Asesor Demo. Todos los derechos reservados.</span>
           <span>Desarrollado en alianza con CBF</span>
         </div>
       </div>

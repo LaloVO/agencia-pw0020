@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>3.33 Inmobiliaria | Joyce Robles Góngora - Monterrey</title>
+        <title>Agencia | Asesor Demo - Monterrey</title>
         <meta
           name="description"
           content="Especialistas en remodelación, liquidación y venta acelerada de casas con deudas de INFONAVIT o Banco en Monterrey, N.L. Recupere su plusvalía con asesoría 100% gratuita."
@@ -41,7 +41,7 @@ const Index = () => {
         {/* SmartSearchCTA: Búsqueda Inteligente Form/Wizard */}
         <SmartSearchCTA />
         
-        {/* P5: Immersive Perfil Asesor (Joyce Robles Góngora Profile Section) */}
+        {/* P5: Immersive Perfil Asesor (Asesor Demo Profile Section) */}
         <AgentsSection />
       </main>
 

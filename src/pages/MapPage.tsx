@@ -60,10 +60,10 @@ const MapPage = () => {
   return (
     <>
       <Helmet>
-        <title>Mapa de Propiedades | 3.33 Inmobiliaria</title>
+        <title>Mapa de Propiedades | Agencia</title>
         <meta
           name="description"
-          content="Explora el mapa de propiedades disponibles en Monterrey y área metropolitana con 3.33 Inmobiliaria."
+          content="Explora el mapa de propiedades disponibles en Monterrey y área metropolitana con Agencia."
         />
       </Helmet>
 

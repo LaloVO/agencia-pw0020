@@ -161,7 +161,7 @@ const OportunidadesDiagonal = () => {
               ¿Buscas tu próximo hogar o una propiedad de oportunidad?
             </h2>
             <p className="font-sans text-sm text-[#07253D]/80 leading-relaxed font-semibold">
-              Explora casas y departamentos listos para escriturar en Monterrey. Propiedades revalorizadas y completamente rehabilitadas con el sello de calidad de 3.33 Inmobiliaria.
+              Explora casas y departamentos listos para escriturar en Monterrey. Propiedades revalorizadas y completamente rehabilitadas con el sello de calidad de Agencia.
             </p>
             <div className="inline-flex items-center gap-3 text-sm font-bold text-[#0B3C5D] group mt-4">
               <span className="relative after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-full after:h-[2px] after:bg-[#0B3C5D] group-hover:text-[#C9A84C] group-hover:after:bg-[#C9A84C] transition-all">

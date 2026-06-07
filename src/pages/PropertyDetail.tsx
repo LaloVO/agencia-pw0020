@@ -17,10 +17,10 @@ const PropertyDetail = () => {
     enabled: !!id,
   });
 
-  const rawPhone = user?.telefono_usuario || '8125055699';
+  const rawPhone = user?.telefono_usuario || '5210000000000';
   const cleanPhone = rawPhone.replace(/\D/g, '');
   const whatsappMsg = property
-    ? encodeURIComponent(`Hola Joyce, me interesa recibir más información sobre la propiedad: ${property.nombre}`)
+    ? encodeURIComponent(`Hola Asesor Demo, me interesa recibir más información sobre la propiedad: ${property.nombre}`)
     : '';
   const whatsappUrl = `https://wa.me/${cleanPhone}?text=${whatsappMsg}`;
 
@@ -64,7 +64,7 @@ const PropertyDetail = () => {
   return (
     <>
       <Helmet>
-        <title>{property.nombre} | {site?.site_name || '3.33 Inmobiliaria'}</title>
+        <title>{property.nombre} | {site?.site_name || 'Agencia'}</title>
         <meta name="description" content={property.descripcion ?? property.nombre} />
       </Helmet>
 
@@ -190,15 +190,15 @@ const PropertyDetail = () => {
                 {/* Agent Card */}
                 <div className="flex items-center gap-4 py-4 border-t border-b border-black/5">
                   <img
-                    src="/joyce-profile.png"
-                    alt="Joyce Robles Góngora"
+                    src="/agent-avatar.svg"
+                    alt="Asesor Demo"
                     className="w-12 h-12 rounded-full object-cover border-2 border-[#C9A84C] bg-white"
                     onError={(e) => {
                       e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200";
                     }}
                   />
                   <div>
-                    <p className="font-sans font-extrabold text-sm text-[#0B3C5D]">Joyce Robles Góngora</p>
+                    <p className="font-sans font-extrabold text-sm text-[#0B3C5D]">Asesor Demo</p>
                     <p className="font-sans text-[11px] text-[#C9A84C] font-bold uppercase tracking-wider">Directora Fundadora</p>
                   </div>
                 </div>

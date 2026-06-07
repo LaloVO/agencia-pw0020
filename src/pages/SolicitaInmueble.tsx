@@ -10,7 +10,7 @@ export default function SolicitaInmueble() {
   return (
     <>
       <Helmet>
-        <title>Búsqueda Inteligente | {site?.site_name || '3.33 Inmobiliaria'}</title>
+        <title>Búsqueda Inteligente | {site?.site_name || 'Agencia'}</title>
         <meta
           name="description"
           content="Completa nuestra solicitud inteligente de 6 pasos para encontrar tu propiedad ideal. Evaluamos tu estilo de vida, deudas y presupuesto para una recomendación perfecta."
